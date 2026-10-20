@@ -30,3 +30,12 @@ frame_input = ttk.LabelFrame(root, text=" Masukkan Nilai Mata Pelajaran ")
 frame_input.pack(padx=30, pady=5, fill="x")
 frame_input.columnconfigure(0, weight=1)
 frame_input.columnconfigure(1, weight=1)
+
+entries = []
+for i, mapel in enumerate(MAPEL):
+    ttk.Label(frame_input, text=mapel + " :").grid(
+        row=i, column=0, padx=(20, 8), pady=4, sticky="e"
+    )
+    entry = ttk.Entry(frame_input, width=14, justify="center")
+    entry.grid(row=i, column=1, padx=(8, 20), pady=4, sticky="w")
+    entries.append(entry)
