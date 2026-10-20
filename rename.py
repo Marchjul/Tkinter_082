@@ -51,3 +51,11 @@ combo_jurusan.pack(padx=20, pady=10, fill="x")
 
 tombol = ttk.Button(root, text="Hasil Prediksi", width=22, command=hasil_prediksi)
 tombol.pack(pady=(10, 10))
+
+frame_hasil = ttk.LabelFrame(root, text=" Prodi yang Diprediksi ")
+frame_hasil.pack(padx=30, pady=(5, 20), fill="x")
+
+label_hasil = ttk.Label(
+    frame_hasil, text="-", font=("Segoe UI", 14, "bold"), anchor="center"
+)
+label_hasil.pack(fill="x", pady=12)
