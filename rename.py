@@ -20,3 +20,8 @@ def hasil_prediksi():
 root = tk.Tk()
 root.title("Aplikasi Prediksi Prodi Pilihan")
 root.resizable(False, False)
+
+label_judul = ttk.Label(
+    root, text="Aplikasi Prediksi Prodi Pilihan", font=("Segoe UI", 16, "bold")
+)
+label_judul.pack(pady=(20, 10))
