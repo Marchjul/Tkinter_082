@@ -65,3 +65,5 @@ w, h = max(root.winfo_reqwidth(), 440), root.winfo_reqheight()
 x = (root.winfo_screenwidth() - w) // 2
 y = max((root.winfo_screenheight() - h) // 2 - 20, 0)
 root.geometry(f"{w}x{h}+{x}+{y}")
+
+root.mainloop()
