@@ -16,3 +16,7 @@ JURUSAN = [
 
 def hasil_prediksi():
     label_hasil.config(text="Teknologi Informasi")
+
+root = tk.Tk()
+root.title("Aplikasi Prediksi Prodi Pilihan")
+root.resizable(False, False)
