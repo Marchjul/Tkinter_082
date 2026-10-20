@@ -48,3 +48,6 @@ combo_jurusan = ttk.Combobox(
 )
 combo_jurusan.current(0)
 combo_jurusan.pack(padx=20, pady=10, fill="x")
+
+tombol = ttk.Button(root, text="Hasil Prediksi", width=22, command=hasil_prediksi)
+tombol.pack(pady=(10, 10))
