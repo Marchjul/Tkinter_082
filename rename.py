@@ -12,3 +12,7 @@ JURUSAN = [
     "Teknik Kimia",
     "Teknik Arsitektur",
 ]
+
+
+def hasil_prediksi():
+    label_hasil.config(text="Teknologi Informasi")
