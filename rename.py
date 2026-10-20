@@ -39,3 +39,12 @@ for i, mapel in enumerate(MAPEL):
     entry = ttk.Entry(frame_input, width=14, justify="center")
     entry.grid(row=i, column=1, padx=(8, 20), pady=4, sticky="w")
     entries.append(entry)
+
+frame_jurusan = ttk.LabelFrame(root, text=" Pilihan Jurusan ")
+frame_jurusan.pack(padx=30, pady=10, fill="x")
+
+combo_jurusan = ttk.Combobox(
+    frame_jurusan, values=JURUSAN, state="readonly", justify="center"
+)
+combo_jurusan.current(0)
+combo_jurusan.pack(padx=20, pady=10, fill="x")
