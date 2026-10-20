@@ -25,3 +25,8 @@ label_judul = ttk.Label(
     root, text="Aplikasi Prediksi Prodi Pilihan", font=("Segoe UI", 16, "bold")
 )
 label_judul.pack(pady=(20, 10))
+
+frame_input = ttk.LabelFrame(root, text=" Masukkan Nilai Mata Pelajaran ")
+frame_input.pack(padx=30, pady=5, fill="x")
+frame_input.columnconfigure(0, weight=1)
+frame_input.columnconfigure(1, weight=1)
